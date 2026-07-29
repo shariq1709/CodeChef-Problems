@@ -58,21 +58,20 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T16:04:08.850Z  
+**Submitted:** 2026-07-29T16:02:34.813Z  
 
 ```py
-import math
-
-T = int(input())
-for _ in range(T):
-    X, Y, P = map(int, input().split())
-    if X * Y >= P:
+# cook your dish here
+T=int(input())
+for i in range(T):
+    X,Y,P=map(int,input().split())
+    if X*Y>=P:
         print(0)
     else:
-        incX = math.ceil(P / Y) - X
-        incY = math.ceil(P / X) - Y
-        print(min(incX, incY))
-
+        for i in range(1,P+1):
+            if (X+i)*Y>=P or (X)*(Y+i)>=P:
+                print(i)
+                break
 ```
 
 ---
