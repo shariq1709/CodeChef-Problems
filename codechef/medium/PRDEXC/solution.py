@@ -6,6 +6,6 @@ for i in range(T):
         print(0)
     else:
         for i in range(1,P+1):
-            if (X+i)*Y>=10 or (X)*(Y-i)>=10:
+            if (X+i)*Y>=10 or (X)*(Y+i)>=10:
                 print(i)
                 break
