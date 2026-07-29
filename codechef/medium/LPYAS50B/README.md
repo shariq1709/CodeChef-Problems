@@ -4,43 +4,23 @@
 
 ## Problem
 
-Write a program that takes an input string - the name of a person and prints  **Hello**  and name of the person with a space between them.
+Reverse and print the string  **"I love Python"** 
 
-### Sample 1:
-Input
-Output
+### Output Format
 
-```
-Chef
-```
-
-```
-Hello Chef
-```
-
-### Sample 2:
-Input
-Output
-
-```
-John
-```
-
-```
-Hello John
-```
+nohtyP evol I
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T06:18:31.641Z  
+**Submitted:** 2026-07-29T06:16:57.364Z  
 
 ```py
 # cook your dish here
-name=input()
-print("Hello",name)
+s="I love Python"
+print(s[::-1])
 ```
 
 ---
