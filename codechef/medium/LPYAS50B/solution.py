@@ -1,3 +1,3 @@
 # cook your dish here
-name=input()
-print("Hello",name)
+s="I love Python"
+print(s[::-1])
