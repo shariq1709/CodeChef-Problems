@@ -47,7 +47,7 @@ Explanation: 7 is not divisible by 3 or 5.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T08:02:06.024Z  
+**Submitted:** 2026-07-29T08:07:01.866Z  
 
 ```py
 n = int(input())
