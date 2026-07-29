@@ -4,29 +4,41 @@
 
 ## Problem
 
-_Description not available._
+Print the following pattern (check the sample output).
+
+Hint: You can do this without using loops as well.
+
+### Sample 1:
+Input
+Output
+
+```
+ 
+```
+
+```
+*
+**
+***
+  
+  *
+
+```
 
 ## Solution
 
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T06:12:27.369Z  
+**Submitted:** 2026-07-29T06:13:21.097Z  
 
 ```py
-def calculate_area(length, width):
-    # Write your code here
-    result=length*width
-    return result
-    
-def main():
-    length, width = map(int, input().split())
-    area = calculate_area(length, width)
-    print(area)
-
-
-main()
-
+# cook your dish here
+print("*")
+print("**")
+print("***")
+print("****")
+print("*****")
 ```
 
 ---
