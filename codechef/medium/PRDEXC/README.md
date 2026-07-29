@@ -58,7 +58,7 @@ It can be verified that this is the minimum number of operations needed.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T15:55:27.209Z  
+**Submitted:** 2026-07-29T15:57:38.293Z  
 
 ```py
 # cook your dish here
@@ -69,7 +69,7 @@ for i in range(T):
         print(0)
     else:
         for i in range(1,P+1):
-            if (X+i)*Y>=10 or (X)*(Y-i)>=10:
+            if (X+i)*Y>=10 or (X)*(Y+i)>=10:
                 print(i)
                 break
 ```
