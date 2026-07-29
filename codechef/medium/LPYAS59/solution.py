@@ -1,7 +1,7 @@
 # cook your dish here
 N=int(input())
 if N>0:
-    print("Postive")
+    print("Positive")
 elif N==0:
     print("Zero")
 else:
