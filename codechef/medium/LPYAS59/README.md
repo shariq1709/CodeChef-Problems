@@ -47,13 +47,13 @@ Negative
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-07-29T05:46:24.212Z  
+**Submitted:** 2026-07-29T05:46:57.910Z  
 
 ```py
 # cook your dish here
 N=int(input())
 if N>0:
-    print("Postive")
+    print("Positive")
 elif N==0:
     print("Zero")
 else:
