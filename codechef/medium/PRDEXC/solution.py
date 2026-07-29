@@ -1,13 +1,11 @@
-import math
-
-T = int(input())
-for _ in range(T):
-    X, Y, P = map(int, input().split())
-    if X * Y >= P:
+# cook your dish here
+T=int(input())
+for i in range(T):
+    X,Y,P=map(int,input().split())
+    if X*Y>=P:
         print(0)
     else:
-       
-        for k in range(1, 201):
-            if any((X + a) * (Y + (k - a)) >= P for a in range(k + 1)):
-                print(k)
+        for i in range(1,P+1):
+            if (X+i)*Y>=P or (X)*(Y+i)>=P:
+                print(i)
                 break
