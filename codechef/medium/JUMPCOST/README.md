@@ -58,16 +58,27 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T15:07:09.055Z  
+**Submitted:** 2026-08-05T15:38:44.671Z  
 
 ```py
 # cook your dish here
-T=int(input())
+T = int(input())
 for i in range(T):
-    N=int(input())
-    arr=list(map(int,input().split()))
-    balance=0
+    N = int(input())
+    arr = list(map(int, input().split()))
     
+    max_bal = 0
+    pos_sum = 0
+    
+    for j in range(1, N):
+        current_bal = arr[j] - j + pos_sum
+        
+        if current_bal > max_bal:
+            max_bal = current_bal
+        if arr[j] > 0:
+            pos_sum += arr[j]
+            
+    print(max_bal)
 ```
 
 ---
