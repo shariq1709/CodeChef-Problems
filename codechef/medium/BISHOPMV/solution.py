@@ -1,9 +1,9 @@
-# cook your dish here
-import math
-T=int(input())
+T = int(input())
 for i in range(T):
-    X1,Y1,X2,Y2=map(int,input().split())
-    if (Y2-Y1)//(X2-X1)==0:
+    x1, y1, x2, y2 = map(int, input().split())
+    if (x1 + y1) % 2 != (x2 + y2) % 2:
         print(-1)
+    elif abs(x1 - x2) == abs(y1 - y2):
+        print(1)
     else:
-        print(abs((Y2-Y1)//(X2-X1)))
+        print(2)
