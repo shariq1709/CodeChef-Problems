@@ -53,18 +53,17 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-05T14:49:16.568Z  
+**Submitted:** 2026-08-05T14:50:22.072Z  
 
 ```py
 # cook your dish here
 T=int(input())
 for i in range(T):
     N,X,Y=map(int,input().split())
-    total=(3*X)+((N-3)*Y)
-    if N>=3:
+    if N<=3:
         print(N*X)
     else:
-        print(total)
+        print((3*X)+((N-3)*Y))
 ```
 
 ---
