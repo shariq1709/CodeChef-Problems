@@ -56,7 +56,7 @@ Chef should choose the third option and use the spells with power $4$ and $8$ to
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-06T10:30:28.586Z  
+**Submitted:** 2026-08-06T10:30:58.828Z  
 
 ```py
 T = int(input())
