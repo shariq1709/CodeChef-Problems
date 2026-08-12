@@ -88,12 +88,20 @@ $6$ is even, so the answer is `Yes`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-12T14:32:59.709Z  
+**Submitted:** 2026-08-12T14:37:30.073Z  
 
 ```py
 # cook your dish here
 L,R=map(int,input().split())
-
+flag=0
+for i in range(L,R+1):
+    if i%2==0:
+        flag=1
+        break
+if flag==1:
+    print("Yes")
+else:
+    print("No")
 ```
 
 ---
