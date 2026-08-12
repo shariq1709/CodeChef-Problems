@@ -1,4 +1,3 @@
-# cook your dish here
 T=int(input())
 for i in range(T):
     N,K=map(int,input().split())
@@ -9,10 +8,15 @@ for i in range(T):
     if len_set==len_arr:
         print(0)
     else:
-        for i in range(0,len(A)+1):
-            count=0
-            if A[i]==A[i+1]:
-                A[i+1]=A[i+1]+1
-                count=count+1
+        A.sort()
+        max_d=0
+        sum_d=0
+        for i in range(1,len(A)):
+            if A[i]<=A[i-1]:
+                d=A[i-1]+1-A[i]
+                A[i]=A[i-1]+1
+                sum_d=sum_d+d
+                if d>max_d:
+                    max_d=d
+        count=max(max_d,(sum_d+K-1)//K)
         print(count)
-        
