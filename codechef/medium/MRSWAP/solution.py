@@ -4,7 +4,5 @@ for i in range(t):
     arr = list(map(int, input().split()))
     max_sum = 0
     for i in range(n):
-        # Compare arr[i] with its mirror element arr[2*n - 1 - i]
         max_sum += max(arr[i], arr[2 * n - 1 - i])
-        
     print(max_sum)
