@@ -56,7 +56,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-19T15:28:18.056Z  
+**Submitted:** 2026-08-19T15:28:28.278Z  
 
 ```py
 t = int(input())
@@ -65,9 +65,7 @@ for i in range(t):
     arr = list(map(int, input().split()))
     max_sum = 0
     for i in range(n):
-        # Compare arr[i] with its mirror element arr[2*n - 1 - i]
         max_sum += max(arr[i], arr[2 * n - 1 - i])
-        
     print(max_sum)
 ```
 
