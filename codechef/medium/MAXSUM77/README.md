@@ -51,19 +51,21 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T15:04:11.018Z  
+**Submitted:** 2026-09-02T15:08:12.747Z  
 
 ```py
 # cook your dish here
-T=int(input())
-for _ in range(T):
-    N,K=map(int,input().split())
-    arr=list(map(int,input().split()))
-    new=sorted(arr)
-    new=new[::-1]
-    for i in range(1,K+1):
-        new.pop()
-    print(sum(new))
+t = int(input())
+for _ in range(t):
+    n, k = map(int, input().split())
+    a = list(map(int, input().split()))
+    rem_len = n - k
+    curr_sum = sum(a[:rem_len])
+    max_sum = curr_sum
+    for i in range(rem_len, n):
+        curr_sum += a[i] - a[i - rem_len]
+        max_sum = max(max_sum, curr_sum)
+    print(max_sum)
 ```
 
 ---
