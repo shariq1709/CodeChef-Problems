@@ -55,12 +55,12 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:46:36.432Z  
+**Submitted:** 2026-09-02T14:47:17.461Z  
 
 ```py
 S=int(input())
 missing=10-S
-print(S)
+print(missing)
 ```
 
 ---
