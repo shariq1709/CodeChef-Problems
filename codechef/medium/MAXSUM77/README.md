@@ -51,11 +51,19 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-02T14:54:23.002Z  
+**Submitted:** 2026-09-02T15:02:10.193Z  
 
 ```py
 # cook your dish here
-
+T=int(input())
+for i in range(T):
+    N,K=map(int,input().split())
+    arr=list(map(int,input().split()))
+    new=sorted(arr)
+    new[::-1]
+    for i in range(1,K+1):
+        new.pop()
+    print(sum(new))
 ```
 
 ---
