@@ -1,16 +1,12 @@
 # cook your dish here
-T = int(input())
-for _ in range(T):
-    N, K = map(int, input().split())
-    arr = list(map(int, input().split()))
-    
-    # 1. Sort the list in descending order to get largest numbers first
-    new = sorted(arr)
-    new = new[::-1]  # Note: new[::-1] must be reassigned back to 'new'
-    
-    # 2. To get the maximum sum after removing K elements from a sorted list,
-    # simply drop the K smallest elements (which are now at the end)
-    for i in range(1, K + 1):
-        new.pop()  # Use pop() to remove elements instead of append()
-        
-    print(sum(new))
+t = int(input())
+for _ in range(t):
+    n, k = map(int, input().split())
+    a = list(map(int, input().split()))
+    rem_len = n - k
+    curr_sum = sum(a[:rem_len])
+    max_sum = curr_sum
+    for i in range(rem_len, n):
+        curr_sum += a[i] - a[i - rem_len]
+        max_sum = max(max_sum, curr_sum)
+    print(max_sum)
