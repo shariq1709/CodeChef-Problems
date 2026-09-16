@@ -54,21 +54,16 @@ Hence, persons $1$ and $3$ share a row in this instance, so there are $2$ people
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-16T14:39:49.408Z  
+**Submitted:** 2026-09-16T14:42:20.478Z  
 
 ```py
-# Read the number of test cases
 T = int(input())
-
-for _ in range(T):
+for i in range(T):
     N, K = map(int, input().split())
-    
-    # If K is less than or equal to N, everyone gets an empty row.
-    # Otherwise, K - N people will have to share a row.
     if K <= N:
         print(0)
     else:
-        print(K - N)
+        print(2*(K - N))
 ```
 
 ---
