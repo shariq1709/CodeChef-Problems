@@ -80,7 +80,7 @@ YES
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:36:15.114Z  
+**Submitted:** 2026-10-07T15:42:19.119Z  
 
 ```py
 # cook your dish here
@@ -100,7 +100,7 @@ for i in range(T):
             x=x-1
         else:
             x=x+1
-    
+    return x==0 and y==0
 ```
 
 ---
