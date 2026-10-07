@@ -15,4 +15,4 @@ for i in range(T):
             x=x-1
         else:
             x=x+1
-    
+    return x==0 and y==0
