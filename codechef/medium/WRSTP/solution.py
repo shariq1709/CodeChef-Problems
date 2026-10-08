@@ -24,7 +24,8 @@ for _ in range(T):
 
     for i in new_list:
         curr_x, curr_y = x, y
-
+        
+        # Undo the effect of the current move and apply its opposite
         if i == 'U':
             curr_y = curr_y - 2
         elif i == 'D':
