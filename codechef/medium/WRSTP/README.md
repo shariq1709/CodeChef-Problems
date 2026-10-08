@@ -80,7 +80,7 @@ YES
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:42:36.999Z  
+**Submitted:** 2026-10-07T15:42:28.623Z  
 
 ```py
 # cook your dish here
@@ -109,7 +109,8 @@ for _ in range(T):
 
     for i in new_list:
         curr_x, curr_y = x, y
-
+        
+        # Undo the effect of the current move and apply its opposite
         if i == 'U':
             curr_y = curr_y - 2
         elif i == 'D':
